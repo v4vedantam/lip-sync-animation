@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lip Sync Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lip Sync Animation</h1>
+        <canvas id="animationCanvas" width="400" height="400"></canvas>
+        <div class="controls">
+            <button id="playButton">Play</button>
+            <input type="text" id="textInput" placeholder="Enter text to speak">
+            <button id="speakButton">Speak</button>
+        </div>
+        <div class="character-creator">
+            <h2>Character Creator</h2>
+            <label>Skin Color: <input type="color" id="skinColor" value="#ffdb99"></label>
+            <label>Eye Color: <input type="color" id="eyeColor" value="#000000"></label>
+            <label>Hair Color: <input type="color" id="hairColor" value="#8B4513"></label>
+            <button id="updateCharacter">Update Character</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mespeak/mespeak.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
